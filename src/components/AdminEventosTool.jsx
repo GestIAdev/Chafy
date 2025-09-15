@@ -77,6 +77,23 @@ export default function AdminEventosTool() {
   const [editIdx, setEditIdx] = useState(null);
   const [msg, setMsg] = useState(null);
 
+  useEffect(() => {
+    const prevBg = document.body.style.background;
+    const prevBgSize = document.body.style.backgroundSize;
+    const prevMargin = document.body.style.margin;
+    const prevOverflowX = document.body.style.overflowX;
+    document.body.style.background = "linear-gradient(135deg, #18120a 0%, #2c1f14 100%)";
+    document.body.style.backgroundSize = 'cover';
+    document.body.style.margin = '0';
+    document.body.style.overflowX = 'hidden';
+    return () => {
+      document.body.style.background = prevBg;
+      document.body.style.backgroundSize = prevBgSize;
+      document.body.style.margin = prevMargin;
+      document.body.style.overflowX = prevOverflowX;
+    };
+  }, []);
+
   // Paginación y grid
   const EVENTS_PER_PAGE = 8;
   const [page, setPage] = useState(1);

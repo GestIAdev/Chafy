@@ -5,16 +5,7 @@ import apiClient from '../config/api';
 const AuthContext = createContext();
 
 export function AuthProvider({ children }) {
-  const [auth, setAuth] = useState(() => {
-    const token = localStorage.getItem('token');
-    let user = null;
-    try {
-      user = JSON.parse(localStorage.getItem('user'));
-    } catch {
-      user = null;
-    }
-    return { token, user, isLogged: !!token };
-  });
+  const [auth, setAuth] = useState({ token: null, user: null, isLogged: false });
 
   // Configurar el token en la instancia de apiClient
   if (auth.token) {
