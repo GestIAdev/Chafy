@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import axios from 'axios';
-import { FaUser, FaEnvelope, FaLock, FaSave, FaTimes, FaCamera, FaHistory, FaTrophy } from 'react-icons/fa';
+import { FaUser, FaLock, FaSave, FaTimes, FaHistory, FaTrophy } from 'react-icons/fa';
 import { useAuth } from '../context/AuthContext';
 
 const UserProfileModal = ({ onClose }) => {

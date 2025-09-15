@@ -88,7 +88,8 @@ function migrarEventosMuestra() {
   }
 }
 
-const eventos = getEventosFromStorage();
+// Nota: usamos el estado local dentro del componente para cargar eventos;
+// la variable top-level fue removida para evitar shadowing y warnings.
 
 function getDiasMes(year, month) {
   return new Date(year, month + 1, 0).getDate();
@@ -116,7 +117,7 @@ const Eventos = () => {
   const { user } = useAuth(); // Obtener información del usuario
   const [eventos, setEventos] = useState(getEventosFromStorage());
   const [mes, setMes] = useState(new Date().getMonth());
-  const [anio, setAnio] = useState(new Date().getFullYear());
+  const [anio] = useState(new Date().getFullYear());
   const [diaSel, setDiaSel] = useState(null);
   const [modalEvento, setModalEvento] = useState(null);
   const [tab, setTab] = useState('proximos');

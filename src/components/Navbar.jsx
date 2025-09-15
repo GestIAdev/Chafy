@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import './Navbar.css';
 import SimpleAuthMenu from './SimpleAuthMenu';
 import { useAuth } from '../context/AuthContext';

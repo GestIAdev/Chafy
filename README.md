@@ -68,3 +68,37 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Deployment to Cloudflare Pages (Frontend only)
+
+If Cloudflare's build fails because it treats warnings as errors (process.env.CI=true), you can force the build step to ignore that by using the provided `build` script which sets `CI=false`.
+
+1. Install dependencies (you only need to do this locally; Cloudflare will run install during build):
+
+```bash
+npm install
+```
+
+2. Locally test a production build:
+
+```bash
+npm run build
+```
+
+3. In Cloudflare Pages, set the project to build from the `barchafy-frontend` folder (or repo root if this is standalone) with the build command:
+
+```
+npm run build
+```
+
+and the output directory:
+
+```
+build
+```
+
+Cloudflare runs build with `process.env.CI=true` by default. Our `build` script uses `cross-env CI=false` so warnings won't fail the build. If Cloudflare still overrides environment variables, you can set the Pages "Environment Variables" for the build with `CI=false` explicitly.
+
+Notes:
+- We added `cross-env` as a dev dependency to ensure cross-platform environment variable setting.
+- This change preserves production optimizations while preventing non-critical lint warnings from failing the build.

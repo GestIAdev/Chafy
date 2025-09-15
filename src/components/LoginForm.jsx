@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { createPortal } from 'react-dom';
-import axios from 'axios';
 
 const LoginForm = ({ onClose }) => {
   const [form, setForm] = useState({ email: '', password: '' });
