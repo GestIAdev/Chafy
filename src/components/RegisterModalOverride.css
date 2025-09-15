@@ -1,0 +1,81 @@
+.register-modal-overlay > .register-modal-content,
+.register-modal-overlay .register-modal-content {
+  width: auto !important;
+  max-width: 420px !important;
+  min-width: 320px !important;
+  inline-size: auto !important;
+  min-inline-size: 320px !important;
+  max-inline-size: 420px !important;
+  box-sizing: border-box !important;
+  margin: 0 auto !important;
+  align-self: center !important;
+  justify-self: center !important;
+  left: unset !important;
+  right: unset !important;
+  top: unset !important;
+  bottom: unset !important;
+  position: relative !important;
+}
+html, body, #root {
+  height: 100vh !important;
+  min-height: 100vh !important;
+  overflow: visible !important;
+}
+
+.register-modal-overlay {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  min-height: 100vh !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: rgba(0,0,0,0.7) !important;
+  z-index: 99999 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: visible !important;
+}
+
+.register-modal-content {
+  inline-size: auto !important;
+  width: auto !important;
+  width: auto !important;
+  max-width: 420px !important;
+  min-width: 320px !important;
+  position: relative;
+  max-width: 420px;
+  min-width: 320px;
+  width: auto !important;
+  min-height: 340px;
+  background: #181818 !important;
+  border-radius: 10px;
+  border: 2px solid #ff9800;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.25);
+  padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+  color: #fff;
+  font-family: 'Times New Roman', Times, serif;
+  z-index: 100000;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box !important;
+}
+
+.register-modal-content input[type="password"],
+.register-modal-content input[type="text"],
+.register-modal-content input[type="email"] {
+  color: #fff !important;
+  caret-color: #ff9800 !important;
+  background: #232323 !important;
+}
+
+html, body {
+  overflow: visible !important;
+  position: static !important;
+  z-index: auto !important;
+}

@@ -1,0 +1,102 @@
+.navbar {
+  width: 100%;
+  min-height: 60px;
+  background: rgba(0,0,0,0.97);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.navbar-logo {
+  font-family: 'Impact', 'Arial Black', Arial, sans-serif;
+  font-size: 2rem;
+  letter-spacing: 3px;
+  font-weight: bold;
+  color: #fff;
+  white-space: nowrap;
+  cursor: pointer;
+  z-index: 101;
+  display: inline-block;
+  user-select: none;
+  outline: none;
+  background: none;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  box-shadow: none;
+  transition: none;
+}
+
+.navbar-logo a {
+  color: #fff;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.navbar-logo a:hover {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+
+.navbar-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: color 0.2s;
+  font-family: inherit;
+}
+
+.navbar-links a:hover {
+  color: #ffd700;
+  text-decoration: none;
+}
+.navbar-cart {
+  color: #ff9800 !important;
+}
+.navbar-dropdown {
+  font-family: inherit;
+  background: #181818 !important;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.25);
+  padding: 8px 0;
+  border: 2px solid #ff9800;
+}
+.dropdown-list {
+  padding: 0;
+  margin: 0;
+}
+.dropdown-list .dropdown-item {
+  color: #fff !important;
+  background: #232323 !important;
+  border-radius: 6px;
+  margin: 4px 12px;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+}

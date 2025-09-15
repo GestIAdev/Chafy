@@ -1,0 +1,15 @@
+.ubicacion-section {
+  text-align: center;
+}
+
+.ubicacion-section h2 {
+  margin-top: 0;
+}
+
+.ubicacion-section p {
+  margin-bottom: 0.5rem;
+}
+
+.ubicacion-section strong {
+  color: #ff9800;
+}

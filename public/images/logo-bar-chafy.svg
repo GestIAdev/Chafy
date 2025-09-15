@@ -1,0 +1,10 @@
+<svg width="340" height="120" viewBox="0 0 340 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="340" height="120" fill="transparent"/>
+  <text x="50%" y="54%" text-anchor="middle" fill="#ff9800" font-family="Montserrat, Arial, sans-serif" font-size="44" font-weight="bold" letter-spacing="2" stroke="#18120a" stroke-width="2" paint-order="stroke" dominant-baseline="middle">Bar Chafy</text>
+  <!-- Gusano 1 -->
+  <path d="M30 100 Q80 80 120 100 T210 100" stroke="#ff9800" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <!-- Gusano 2 -->
+  <path d="M60 30 Q120 60 180 30 T300 50" stroke="#ffd700" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- Gusano 3 -->
+  <path d="M220 110 Q260 90 320 110" stroke="#ffb347" stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>
